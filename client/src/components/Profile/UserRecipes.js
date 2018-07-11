@@ -29,7 +29,7 @@ const UserRecipes = ({ username }) => (
       // console.log(data);
       return (
         <ul>
-          <h3>Your Recipes</h3>
+          <h3>Your Places</h3>
           {!data.getUserRecipes.length && (
             <p>
               <strong>You have not added any recipes yet</strong>
