@@ -122,10 +122,10 @@ class AddRecipe extends React.Component {
                   onChange={this.handleChange}
                   value={category}
                 >
-                  <option value="Breakfast">Location</option>
-                  <option value="Lunch">Chennai</option>
-                  <option value="Dinner">Bangalore</option>
-                  <option value="Snack">Mumbai</option>
+                  <option value="Location">Location</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Mumbai">Mumbai</option>
                 </select>
                 <label htmlFor="description">Place Text</label>
                 <input
