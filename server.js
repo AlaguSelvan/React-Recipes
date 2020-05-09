@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
-require("dotenv").config({ path: "variables.env" });
+require("dotenv").config();
 const Recipe = require("./models/Recipe");
 const User = require("./models/User");
 
@@ -22,11 +22,11 @@ const schema = makeExecutableSchema({
 });
 
 // Connects to database
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("DB connected"))
-  .catch(err => console.error(err));
-
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+})
 // Initializes application
 const app = express();
 

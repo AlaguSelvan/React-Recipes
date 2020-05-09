@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "apollo-boost": "^0.1.10",
+    "@apollo/react-hooks": "^3.1.5",
+    "apollo-boost": "^0.1.28",
+    "graphql": "^15.0.0",
     "jwt-decode": "^2.2.0",
-    "react": "^16.4.1",
+    "react": "^16.13.1",
     "react-apollo": "^2.1.9",
     "react-ckeditor-component": "^1.0.7",
-    "react-dom": "^16.4.1",
-    "react-pose": "^2.1.2",
+    "react-dom": "^16.13.1",
+    "react-pose": "^2.3.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^1.1.4",
     "react-spinners": "^0.3.2"
   },
   "scripts": {
