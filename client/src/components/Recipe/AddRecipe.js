@@ -95,12 +95,12 @@ class AddRecipe extends React.Component {
         {(addRecipe, { data, loading, error }) => {
           return (
             <div className="App">
-              <h2 className="main-title">Add Place</h2>
+              <h2 className="main-title">Add Recipe</h2>
               <form
                 className="form"
                 onSubmit={event => this.handleSubmit(event, addRecipe)}
               >
-                <label htmlFor="name">Place Name</label>
+                <label htmlFor="name">Recipe Name</label>
                 <input
                   type="text"
                   name="name"
@@ -108,7 +108,7 @@ class AddRecipe extends React.Component {
                   onChange={this.handleChange}
                   value={name}
                 />
-                <label htmlFor="imageUrl">Image URl</label>
+                <label htmlFor="imageUrl">Recipe Image</label>
                 <input
                   type="text"
                   name="imageUrl"
@@ -116,18 +116,18 @@ class AddRecipe extends React.Component {
                   onChange={this.handleChange}
                   value={imageUrl}
                 />
-                <label htmlFor="category">Place Destination</label>
+                <label htmlFor="category">Category of Recipe</label>
                 <select
                   name="category"
                   onChange={this.handleChange}
                   value={category}
                 >
-                  <option value="Location">Location</option>
-                  <option value="Chennai">Chennai</option>
-                  <option value="Bangalore">Bangalore</option>
-                  <option value="Mumbai">Mumbai</option>
+                  <option value="Breakfast">Breakfast</option>
+                  <option value="Lunch">Lunch</option>
+                  <option value="Dinner">Dinner</option>
+                  <option value="Snack">Snack</option>
                 </select>
-                <label htmlFor="description">Place Text</label>
+                <label htmlFor="description">Recipe Description</label>
                 <input
                   type="text"
                   name="description"
@@ -135,7 +135,7 @@ class AddRecipe extends React.Component {
                   onChange={this.handleChange}
                   value={description}
                 />
-                <label htmlFor="instructions">Place Description</label>
+                <label htmlFor="instructions">Recipe Instructions</label>
                 <CKEditor
                   name="instructions"
                   content={instructions}

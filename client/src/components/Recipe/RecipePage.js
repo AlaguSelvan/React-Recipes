@@ -46,7 +46,7 @@ const RecipePage = ({ match }) => {
               <blockquote className="recipe-description">
                 {data.getRecipe.description}
               </blockquote>
-              <h3 className="recipe-instructions__title">Description</h3>
+              <h3 className="recipe-instructions__title">Instructions</h3>
               <div
                 className="recipe-instructions"
                 dangerouslySetInnerHTML={{

@@ -34,7 +34,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1 className="main-title">
-          Find Places You <strong>Love</strong>
+          Find Recipes You <strong>Love</strong>
         </h1>
         <Query query={GET_ALL_RECIPES}>
           {({ data, loading, error }) => {

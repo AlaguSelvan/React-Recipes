@@ -22,7 +22,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
 const client = new ApolloClient({
-  uri: "http://tranquil-sands-71763.herokuapp.com/graphql",
+  uri: "http://localhost:4444/graphql",
   fetchOptions: {
     credentials: "include"
   },
@@ -35,9 +35,9 @@ const client = new ApolloClient({
     });
   },
   onError: ({ networkError }) => {
-    if (networkError) {
-      localStorage.setItem("token", "");
-    }
+    // if (networkError) {
+    //   localStorage.setItem("token", "");
+    // }
   }
 });
 

@@ -22,7 +22,7 @@ class Search extends React.Component {
       <ApolloConsumer>
         {client => (
           <div className="App">
-            <h2 className="main-title">Search for Places</h2>
+            <h2 className="main-title">Search for Recipes</h2>
             <input
               type="search"
               className="search"
