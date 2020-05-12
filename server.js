@@ -38,7 +38,7 @@ const app = express();
 //   origin: "http://localhost:3000",
 //   credentials: true
 // };
-app.use(cors('*'));
+// app.use(cors('*'));
 
 // Set up JWT authentication middleware
 app.use(async (req, res, next) => {
