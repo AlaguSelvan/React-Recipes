@@ -12,8 +12,8 @@
     "react-ckeditor-component": "^1.0.7",
     "react-dom": "^16.13.1",
     "react-pose": "^2.3.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
     "react-spinners": "^0.3.2"
   },
   "scripts": {
